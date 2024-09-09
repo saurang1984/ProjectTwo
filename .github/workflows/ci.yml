@@ -1,7 +1,10 @@
-name: CI
+name: CI for ProjectOne
 
 on:
   push:
+    branches:
+      - master
+  pull_request:
     branches:
       - master
   workflow_dispatch:
@@ -9,3 +12,7 @@ on:
 jobs:
   build-and-test:
     uses: saurang1984/dotnet-build-workflows/.github/workflows/dotnet-build.yml@main
+    with:
+      project-name: 'ProjectTwo'
+      solution-path: './ProjectTwo.sln'
+      dotnet-version: '7.0'
