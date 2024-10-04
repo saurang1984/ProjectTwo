@@ -15,6 +15,12 @@
             // Sample usage of the Reverse method
             string reversedString = processor.Reverse(inputString);
             Console.WriteLine($"The reverse of '{inputString}' is: '{reversedString}'");
+
+            // Sample usage of the Reverse method - 2
+            inputString = "hello GitHub";
+            string reversedString = processor.Reverse(inputString);
+            Console.WriteLine($"The reverse of '{inputString}' is: '{reversedString}'");
+
         }
     }
 }
