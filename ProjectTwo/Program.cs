@@ -4,6 +4,7 @@
     {
         public static void Main(string[] args)
         {
+            // updated for demo
             // Create an instance of the StringProcessor class
             var processor = new StringProcessor();
 
